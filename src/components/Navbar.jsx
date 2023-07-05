@@ -6,8 +6,8 @@ import { UserAuth } from '../context/AuthContext'
 
 function Navbar() {
 const [nav,setNav]=useState(false)
-const {user,logout}=UserAuth()
 const navigate=useNavigate()
+const {user,logout}=UserAuth()
 
 const handleSignOut=async()=>{
   try {
@@ -17,7 +17,7 @@ const handleSignOut=async()=>{
     console.log(e.message)
   }
     }
-  
+
 
 const handleNav=()=>{
 setNav(!nav)
@@ -25,25 +25,24 @@ setNav(!nav)
   return (
 <div className='rounded-div flex items-center justify-between h-20 font-bold'>
 <Link to='/'>
-<h1 className='text-2xl'>Coachcoin</h1>
+<h1 className='text-2xl'>Attendies.</h1>
 </Link>
 <div className='hidden md:block'>
 <ThemeToggle/>
 </div>
 
-{user?.email? (
-  <div>
+{ user?.email?(
+    <div>
     <Link to="/account" className='p-4'>Account</Link>
-    <button onClick={handleSignOut}>Sign out</button>
-  </div>
-): (
+    <button onClick={handleSignOut}>Sign Out</button>
+    </div>
+  ):(
   <div className='hidden md:block'>
-  <Link to='/signin' className='p-4 hover:text-accent'>Sign In</Link>
-  <Link to='/signup' className='bg-button text-btnText px-5 py-2 ml-2 rounded-2xl shadow-lg hover:shadow-2xl '>Sign Up</Link>
-  
-  </div>
-  
-)}
+  <Link to='/lecturer' className='p-4 hover:text-accent'>Lecturer</Link>
+  <Link to='/signup' className='bg-button text-btnText px-5 py-2 ml-2 rounded-2xl shadow-lg hover:shadow-2xl '>Students</Link>
+  </div>  
+  )}
+
 
 {/**Menu*/}
 <div className='block md:hidden cursor-pointer z-10' onClick={handleNav}>

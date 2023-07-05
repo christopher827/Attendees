@@ -24,8 +24,9 @@ function SignIn() {
 
   return (
     <div>
-<div className='max-w-[400px] mx-auto min-h-[600px] px-4 py-20'>
+<div className='max-w-[400px] mx-auto h-screen px-4 py-20'>
   <h1 className='font-2xl font-bold text-center'>Sign In</h1>
+  <p className='text-center'>Welcome back! We've missed your presence dearly and are thrilled to have you again.</p>
   <form onSubmit={handleSubmit}>
     <div className='my-4'><label>Email</label>
     <div className='my-2 w-full relative rounded-2xl shadow-xl outline-none'>
