@@ -25,7 +25,7 @@ setNav(!nav)
   return (
 <div className='rounded-div flex items-center justify-between h-20 font-bold'>
 <Link to='/'>
-<h1 className='text-2xl'>Attendies.</h1>
+<h1 className='text-2xl'>Attendees.</h1>
 </Link>
 <div className='hidden md:block'>
 <ThemeToggle/>

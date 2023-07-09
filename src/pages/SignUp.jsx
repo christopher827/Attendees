@@ -1,4 +1,4 @@
-import React, { useState,useContext } from 'react';
+import React, { useState } from 'react';
 import { AiFillLock, AiOutlineMail } from 'react-icons/ai';
 import { Link, useNavigate } from 'react-router-dom';
 import { UserAuth } from "../context/AuthContext";
@@ -22,6 +22,8 @@ function SignUp() {
       setError(e.message);
       console.log(e.message);
     }
+
+
   };
 
   return (
@@ -69,5 +71,4 @@ function SignUp() {
     </div>
   );
 }
-
 export default SignUp;

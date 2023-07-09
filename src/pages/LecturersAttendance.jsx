@@ -62,8 +62,6 @@ function Account() {
             <tr className='border-b'>
               <th></th>
               <th>#</th>
-              <th className='px-4'>Name</th>
-              <th>Matric Number</th>
               <th className='text-left'>Email</th>
               <th>Status</th>
               <th className='hidden md:table-cell'>Longitude</th>
@@ -84,8 +82,6 @@ function Account() {
                 <tr key={student.id}>
                   <td></td>
                   <td>{index + 1}</td>
-                  <td className='px-4'>Christopher Oche</td>
-                  <td>1234</td>
                   <td className='text-left'>{student.email}</td>
                   <td>{status}</td>
                   <td className='hidden md:table-cell'>{student.longitude}</td>

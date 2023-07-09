@@ -1,6 +1,6 @@
 import React,{useState,useEffect, createContext} from "react";
 
-//This function retrieves a color preference from local storage if any is available 
+//This function retrieves a color preference from local storage if any is available
 const getInitialTheme=()=>{
 
 //This condition checks whether the window object is defined and whether the browser supports the localStorage API.
