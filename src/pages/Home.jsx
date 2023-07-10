@@ -16,9 +16,9 @@ const handleSignOut=async()=>{
     }
 
   return (
-<div className='flex flex-col items-center justify-around w-full px-24 lg:flex-row md:flex-col xl:flex-row '>  
+<div className='flex flex-col items-center justify-around w-full px-24 lg:flex-row md:flex-col xl:flex-row max-h-[70%]'>  
 <div className='text-center lg:text-left'>
-<h1 className='text-[60px] lg:text-[72px] pt-20 font-bold mb-6 leading-[60px]'>Streamline Your <br/> Attendance Management</h1>
+<h1 className='text-[45px] lg:text-[72px] pt-20 font-bold mb-6 leading-[60px]'>Streamline Your <br/> Attendance Management</h1>
 <p className='font-medium text-grey mb-5 max-w-[597px]'>Experience the convenience and efficiency of AttendanceTracker in streamlining your school's attendance management process. Start your journey towards accurate attendance records and improved student outcomes. Sign up for Attendance Tracker now!</p>
 {
   user?.email?(
@@ -34,7 +34,7 @@ const handleSignOut=async()=>{
     </div>
     
     <div className=''>
-    <img src={img1} alt='heroImage' className='max-w-3xl h-auto' />
+    <img src={img1} alt='heroImage' className='max-w-2xl ' />
     </div>
     
     </div>

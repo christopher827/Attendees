@@ -54,6 +54,8 @@ setNav(!nav)
 <ul className='w-full p-4'>
 <li className='border-b py-6' onClick={handleNav}><Link to="/">Home</Link></li>
 <li className='border-b py-6' onClick={handleNav}><Link to="/">Account</Link></li>
+<li className='border-b py-6' onClick={handleNav}><Link to="/lecturer">Lecturer</Link></li>
+
 <li className=' py-6'><ThemeToggle/></li>
 </ul>
 
