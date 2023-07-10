@@ -17,7 +17,7 @@ function SignUp() {
     setError('');
     try {
       await signUp(email, password);
-      navigate("/account");
+      navigate('/account');
     } catch (e) {
       setError(e.message);
       console.log(e.message);
@@ -33,7 +33,7 @@ function SignUp() {
         <p className='text-center'>Effortlessly track your attendance by logging in as a student. Stay on top of your progress with ease.</p>
 
         {error ? <p className='bg-red-300 p-3 my-2'>({error})</p> : null}
-        <form>
+        <form onSubmit={handleSignUp}>
           <div className='my-4'>
             <label>Full Name</label>
             <div className='my-2 w-full relative rounded-2xl shadow-xl outline-none'>
@@ -64,7 +64,7 @@ function SignUp() {
             </div>
           </div>
 
-          <button className='w-full my-2 p-3 bg-button text-btnText rounded-2xl shadow-xl' onClick={handleSignUp}>Sign Up</button>
+          <button className='w-full my-2 p-3 bg-button text-btnText rounded-2xl shadow-xl' >Sign Up</button>
         </form>
         <p className='my-4 text-center'>Already have an account ? <Link to="/signin" className='text-accent'>Sign In</Link></p>
       </div>
