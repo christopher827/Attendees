@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { collection, query, onSnapshot ,doc,updateDoc} from 'firebase/firestore';
 import { db } from '../firebase';
 
-function Account() {
+function LecturersAttendance() {
   const [students, setStudents] = useState([]);
   const [lecturerLatitude, setLecturerLatitude] = useState(null);
   const [lecturerLongitude, setLecturerLongitude] = useState(null);
@@ -136,4 +136,4 @@ function Account() {
   );
 }
 
-export default Account;
+export default LecturersAttendance;
