@@ -11,6 +11,9 @@ import { AuthContextProvider } from "./context/AuthContext";
 import Account from "./pages/Account";
 import Lecturer from "./pages/Lecturer";
 import LecturersAttendance from "./pages/LecturersAttendance";
+import Mathematics from "./pages/Mathematics"
+import LecturersSignIn from "./pages/LecturersSignIn";
+import English from "./pages/English";
 
 function App() {
 
@@ -25,6 +28,9 @@ return(
 <Route path="/account" element={<Account/>}/>
 <Route path="/lecturer" element={<Lecturer/>}/>
 <Route path="/lecturersattendance" element={<LecturersAttendance/>}/>
+<Route path="/math" element={<Mathematics/>}/>
+<Route path="/lecturersSignIn" element={<LecturersSignIn/>}/>
+<Route path="/english" element={<English/>}/>
 <Route path="*" element={<PageNotFound/>}/>
 </Routes>
 <Footer/>
