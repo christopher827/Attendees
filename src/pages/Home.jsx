@@ -34,7 +34,7 @@ const handleSignOut=async()=>{
     </div>
     
     <div className=''>
-    <img src={img1} alt='heroImage' className='max-w-2xl ' />
+    <img src={img1} alt='heroImage' className='max-w-full ' />
     </div>
     
     </div>
