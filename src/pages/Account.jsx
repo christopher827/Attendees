@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { db } from '../firebase';
 import { collection, addDoc, where, query, getDocs, limit, onSnapshot } from 'firebase/firestore';
-import QrImg from '../assets/Images/Qr.jpeg';
+import Qr2 from '../assets/Images/Qr.jpeg';
 
 function Account() {
   const { user, logout } = UserAuth();
@@ -370,7 +370,7 @@ function Account() {
           <div className='w-10/12 sm:w-8/12 md:w-5/12 lg:w-6/12 flex flex-col justify-center items-center px-4'>
             <p className='text-4xl lg:text-5xl font-bold pt-10 md:pt-0 text-center'>Scan Your Presence</p>
            <p className='lg:text-lg 2xl:text-xl py-6 text-center'>Click the button to be recognized as present</p>
-
+      <img src={Qr2} alt="" className="rounded-sm w-6/12 sm:w-4/12 md:w-5/12 lg:w-6/12" />
            <div class="w-full text-center">
   <div class="flex justify-between border-b">
     <div class="text-left">Courses</div>
