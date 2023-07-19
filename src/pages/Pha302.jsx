@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { collection, query, onSnapshot ,doc,updateDoc} from 'firebase/firestore';
 import { db } from '../firebase';
 
-function Mathematics() {
+function Pha302() {
   const [students, setStudents] = useState([]);
   const [lecturerLatitude, setLecturerLatitude] = useState(null);
   const [lecturerLongitude, setLecturerLongitude] = useState(null);
@@ -48,7 +48,7 @@ function Mathematics() {
   
 
   const fetchStudents = () => {
-    const studentsRef = collection(db, 'maths');
+    const studentsRef = collection(db, 'Pha302');
     const q = query(studentsRef);
     return onSnapshot(q, (snapshot) => {
       const studentData = snapshot.docs.map((doc) => ({
@@ -136,4 +136,4 @@ function Mathematics() {
     </div>
   );
 }
-export default Mathematics;
+export default Pha302;

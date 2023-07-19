@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
-import { AiFillLock, AiOutlineMail } from 'react-icons/ai';
-import { Link, useNavigate } from 'react-router-dom';
-import { UserAuth } from '../context/AuthContext';
-import { db } from '../firebase';
-import { collection, getDocs, where } from 'firebase/firestore';
+import { AiFillLock } from 'react-icons/ai';
+import {  useNavigate } from 'react-router-dom';
 
 function LecturersSignIn() {
   const [subject, setSubject] = useState('');
@@ -13,42 +10,30 @@ function LecturersSignIn() {
 
   const handleSignIn = async (e) => {
     e.preventDefault();
-
-    try {
-      const lecturersRef = collection(db, 'lecturersInfo');
-      const q = where('password', '==', password);
-      const querySnapshot = await getDocs(collection(db, 'lecturersInfo'), q);
-
-      if (querySnapshot.empty) {
-        setError('Incorrect password');
-      } else {
-        let matchingSubject = false;
-        const normalizedSubject = subject.toLowerCase().trim();
-        querySnapshot.forEach((doc) => {
-          const docData = doc.data();
-          const docSubject = docData.subject.toLowerCase().trim();
-          if (docSubject === normalizedSubject) {
-            matchingSubject = true;
-          }
-        });
-
-        if (matchingSubject) {
-          // Redirect based on subject
-          if (normalizedSubject === 'mathematics') {
-            navigate('/math');
-          } else if (normalizedSubject === 'english') {
-            navigate('/english');
-          } else {
-            alert("Invalid Subject or password")
-            setError('Invalid subject');
-          }
-        } else {
-          setError('Invalid subject');
-        }
+    if (password === 'password123') {
+      const subjectLowerCase = subject.toLowerCase();
+  
+      if (subjectLowerCase.includes('ana 302')) {
+        navigate('/ana302');
+      } else if (subjectLowerCase.includes('ent 302')) {
+        navigate('/ent302');
+      } else if (subjectLowerCase.includes('gst 207')) {
+        navigate('/Gst207');
+      } else if (subjectLowerCase.includes('pol 201')) {
+        navigate('/Pol201');
+      }else if (subjectLowerCase.includes('phs 234')) {
+        navigate('/Phs234');
+      }else if (subjectLowerCase.includes('bch 202')) {
+        navigate('/Bch202');
+      }else if (subjectLowerCase.includes('pha 302')) {
+        navigate('/Pha302');
+      }else if (subjectLowerCase.includes('pth 304')) {
+        navigate('/Pth304');
+      }else {
+        setError('Invalid subject');
       }
-    } catch (error) {
-      console.error('Error signing in:', error);
-      setError('An error occurred');
+    } else {
+alert("Invalid Password or Subject")
     }
   };
 
@@ -86,9 +71,6 @@ function LecturersSignIn() {
             Sign In
           </button>
         </form>
-        <p className='my-4 text-center'>
-          Don't have an account ? <Link to='/lecturer' className='text-accent'>Sign Up</Link>
-        </p>
       </div>
     </div>
   );

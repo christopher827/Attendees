@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { collection, query, onSnapshot ,doc,updateDoc} from 'firebase/firestore';
 import { db } from '../firebase';
 
-function English() {
+function Gst207() {
   const [students, setStudents] = useState([]);
   const [lecturerLatitude, setLecturerLatitude] = useState(null);
   const [lecturerLongitude, setLecturerLongitude] = useState(null);
@@ -48,7 +48,7 @@ function English() {
   
 
   const fetchStudents = () => {
-    const studentsRef = collection(db, 'english');
+    const studentsRef = collection(db, 'Gst207');
     const q = query(studentsRef);
     return onSnapshot(q, (snapshot) => {
       const studentData = snapshot.docs.map((doc) => ({
@@ -136,4 +136,4 @@ function English() {
     </div>
   );
 }
-export default English;
+export default Gst207;
