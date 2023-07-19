@@ -33,7 +33,6 @@ return(
 <Route path="/english" element={<English/>}/>
 <Route path="*" element={<PageNotFound/>}/>
 </Routes>
-<Footer/>
 </AuthContextProvider>
 
 </ThemeProvider>
