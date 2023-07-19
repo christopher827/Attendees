@@ -38,7 +38,7 @@ setNav(!nav)
     </div>
   ):(
   <div className='hidden md:block'>
-  <Link to='/lecturer' className='p-4 hover:text-accent'>Lecturer</Link>
+  <Link to='/lecturersSignIn' className='p-4 hover:text-accent'>Lecturer</Link>
   <Link to='/signup' className='bg-button text-btnText px-5 py-2 ml-2 rounded-2xl shadow-lg hover:shadow-2xl '>Students</Link>
   </div>  
   )}
@@ -54,7 +54,7 @@ setNav(!nav)
 <ul className='w-full p-4'>
 <li className='border-b py-6' onClick={handleNav}><Link to="/">Home</Link></li>
 <li className='border-b py-6' onClick={handleNav}><Link to="/">Account</Link></li>
-<li className='border-b py-6' onClick={handleNav}><Link to="/lecturer">Lecturer</Link></li>
+<li className='border-b py-6' onClick={handleNav}><Link to="/lecturersSignIn">Lecturer</Link></li>
 
 <li className=' py-6'><ThemeToggle/></li>
 </ul>
@@ -69,3 +69,4 @@ setNav(!nav)
   )
 }
 export default Navbar
+
