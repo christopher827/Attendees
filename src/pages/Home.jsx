@@ -2,6 +2,7 @@ import React from 'react'
 import img1 from "../assets/Images/1.png"
 import { Link, useNavigate } from 'react-router-dom'
 import { UserAuth } from '../context/AuthContext'
+import Footer from "../components/Footer"
 
 function Home() {
 const {user,logout}=UserAuth()
@@ -16,6 +17,7 @@ const handleSignOut=async()=>{
     }
 
   return (
+    <>
 <div className='flex flex-col items-center justify-around w-full px-24 lg:flex-row md:flex-col xl:flex-row max-h-[70%]'>  
 <div className='text-center lg:text-left'>
 <h1 className='text-[45px] lg:text-[72px] pt-20 font-bold mb-6 leading-[60px]'>Streamline Your <br/> Attendance Management</h1>
@@ -38,6 +40,8 @@ const handleSignOut=async()=>{
     </div>
     
     </div>
+      <Footer/>
+    </>
     
         )    }
 
