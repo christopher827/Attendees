@@ -10,7 +10,7 @@ const navigate=useNavigate()
 const {user,logout}=UserAuth()
 
 const handleSignOut=async()=>{
-  try {
+try {
     await logout()
     navigate('/')
   } catch (e) {
