@@ -21,7 +21,7 @@ console.log(e.message)
 
 const handleNav=()=>{
 setNav(!nav)
-  }
+}
 return (
 <div className='rounded-div flex items-center justify-between h-20 font-bold'>
 <Link to='/'>
