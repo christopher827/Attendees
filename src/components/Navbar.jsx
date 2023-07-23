@@ -16,7 +16,7 @@ navigate('/')
 } catch (e) {
 console.log(e.message)
 }
-    }
+}
 
 
 const handleNav=()=>{
