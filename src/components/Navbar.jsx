@@ -46,7 +46,7 @@ return (
 
 {/**Menu*/}
 <div className='block md:hidden cursor-pointer z-10' onClick={handleNav}>
-  {nav ? <AiOutlineClose size={20}/>:<AiOutlineMenu size={20}/>}
+{nav ? <AiOutlineClose size={20}/>:<AiOutlineMenu size={20}/>}
 </div>
 
 {/*Mobile menu*/}
