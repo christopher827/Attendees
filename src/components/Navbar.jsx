@@ -35,7 +35,7 @@ return (
     <div>
     <Link to="/account" className='p-4'>Account</Link>
     <button onClick={handleSignOut}>Sign Out</button>
-    </div>
+  </div>
   ):(
   <div className='hidden md:block'>
   <Link to='/lecturersSignIn' className='p-4 hover:text-accent'>Lecturer</Link>
