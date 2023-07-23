@@ -13,7 +13,7 @@ const handleSignOut=async()=>{
 try {
 await logout()
 navigate('/')
-  } catch (e) {
+} catch (e) {
   console.log(e.message)
   }
     }
