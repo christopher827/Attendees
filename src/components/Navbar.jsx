@@ -32,7 +32,7 @@ return (
 </div>
 
 { user?.email?(
-    <div>
+  <div>
     <Link to="/account" className='p-4'>Account</Link>
     <button onClick={handleSignOut}>Sign Out</button>
   </div>
