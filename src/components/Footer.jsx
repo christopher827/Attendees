@@ -12,7 +12,7 @@ function Footer() {
   <Link to=''><AiOutlineInstagram/></Link>
    <Link to='/'><FaLinkedin/></Link>
   <Link to="/">  <FaTwitter/></Link>
-   <Link to="/"> <FaFacebookF/></Link>
+  <Link to="/"> <FaFacebookF/></Link>
   <Link to='/'><FaGithub/></Link>  
        
   </div>
