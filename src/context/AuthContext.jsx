@@ -35,7 +35,7 @@ const signIn = (email, password) => {
 
 return (
     <UserContext.Provider value={{ signUp, signIn, logout, user }}>
-      {children}
+    {children}
 </UserContext.Provider>
   );
 };
