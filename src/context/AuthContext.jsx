@@ -29,7 +29,7 @@ createUserWithEmailAndPassword(auth, email, password);
     setUser(currentUser);
     });
     return () => {
-      unsubscribe();
+    unsubscribe();
   };
 }, []);
 
