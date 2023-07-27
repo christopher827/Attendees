@@ -21,7 +21,7 @@ function Footer() {
 <ThemeToggle/>
 </div>
 
-    </div>
+  </div>
   )
 }
 
