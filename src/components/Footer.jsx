@@ -13,7 +13,7 @@ function Footer() {
     <Link to='/'><FaLinkedin/></Link>
   <Link to="/">  <FaTwitter/></Link>
    <Link to="/"> <FaFacebookF/></Link>
-    <Link to='/'><FaGithub/></Link>  
+  <Link to='/'><FaGithub/></Link>  
        
   </div>
 <p>Attendee Inc</p>
