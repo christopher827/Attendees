@@ -21,7 +21,7 @@ createUserWithEmailAndPassword(auth, email, password);
   };
 
   const logout = () => {
-    return signOut(auth);
+  return signOut(auth);
   };
 
   useEffect(() => {
