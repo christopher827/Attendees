@@ -26,7 +26,7 @@ createUserWithEmailAndPassword(auth, email, password);
 
   useEffect(() => {
   const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-      setUser(currentUser);
+    setUser(currentUser);
     });
     return () => {
       unsubscribe();
