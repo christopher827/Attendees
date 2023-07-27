@@ -16,7 +16,7 @@ const signUp = (email, password) => {
 createUserWithEmailAndPassword(auth, email, password);
 
   };
-  const signIn = (email, password) => {
+const signIn = (email, password) => {
   return signInWithEmailAndPassword(auth, email, password);
   };
 
