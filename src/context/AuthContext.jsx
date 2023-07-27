@@ -30,7 +30,7 @@ createUserWithEmailAndPassword(auth, email, password);
     });
     return () => {
       unsubscribe();
-    };
+  };
 }, []);
 
 return (
