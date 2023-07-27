@@ -33,7 +33,7 @@ createUserWithEmailAndPassword(auth, email, password);
     };
   }, []);
 
-  return (
+return (
     <UserContext.Provider value={{ signUp, signIn, logout, user }}>
       {children}
   </UserContext.Provider>
