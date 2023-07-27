@@ -15,7 +15,7 @@ function Footer() {
    <Link to="/"> <FaFacebookF/></Link>
     <Link to='/'><FaGithub/></Link>  
        
-    </div>
+  </div>
 <p>Attendee Inc</p>
 <div>
 <ThemeToggle/>
