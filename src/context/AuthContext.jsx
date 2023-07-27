@@ -13,7 +13,7 @@ export const AuthContextProvider = ({ children }) => {
 const [user, setUser] = useState({});
 
 const signUp = (email, password) => {
-  createUserWithEmailAndPassword(auth, email, password);
+createUserWithEmailAndPassword(auth, email, password);
 
   };
   const signIn = (email, password) => {
