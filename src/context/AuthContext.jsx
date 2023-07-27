@@ -41,5 +41,5 @@ return (
 };
 
 export const UserAuth = () => {
-  return useContext(UserContext);
+return useContext(UserContext);
 };
