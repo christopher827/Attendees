@@ -17,7 +17,7 @@ createUserWithEmailAndPassword(auth, email, password);
 
   };
   const signIn = (email, password) => {
-    return signInWithEmailAndPassword(auth, email, password);
+  return signInWithEmailAndPassword(auth, email, password);
   };
 
   const logout = () => {
