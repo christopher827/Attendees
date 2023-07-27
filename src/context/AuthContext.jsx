@@ -20,7 +20,7 @@ const signIn = (email, password) => {
   return signInWithEmailAndPassword(auth, email, password);
   };
 
-  const logout = () => {
+const logout = () => {
   return signOut(auth);
   };
 
