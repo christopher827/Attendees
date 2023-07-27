@@ -31,7 +31,7 @@ createUserWithEmailAndPassword(auth, email, password);
     return () => {
       unsubscribe();
     };
-  }, []);
+}, []);
 
 return (
     <UserContext.Provider value={{ signUp, signIn, logout, user }}>
