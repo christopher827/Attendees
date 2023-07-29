@@ -15,7 +15,7 @@ const { signUp } = UserAuth();
 const handleSignUp = async (e) => {
 e.preventDefault();
 setError('');
-    try {
+try {
       await signUp(email, password);
       navigate('/account');
     } catch (e) {
