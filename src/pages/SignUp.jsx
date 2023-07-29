@@ -69,7 +69,7 @@ console.log(e.message);
 
         <p className='my-4 text-center'>Already have an account ? <Link to="/signin" className='text-accent'>Sign In</Link></p>
       </div>
-    </div>
+</div>
 );
 }
 export default SignUp;
