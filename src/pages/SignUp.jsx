@@ -41,7 +41,7 @@ try {
             </div>
           </div>
 
-          <div className='my-4'>
+      <div className='my-4'>
             <label>Matric Number</label>
             <div className='my-2 w-full relative rounded-2xl shadow-xl outline-none'>
               <input type="text" onChange={(e) => setMatricNumber(e.target.value)} className='w-full p-2 bg-primary border border-input rounded-2xl outline-none' />
