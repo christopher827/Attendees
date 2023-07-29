@@ -10,7 +10,7 @@ const [error, setError] = useState('');
 const [matricNumber, setMatricNumber] = useState('');
 const [fullName, setFullName] = useState('');
 const navigate = useNavigate();
-  const { signUp } = UserAuth();
+const { signUp } = UserAuth();
 
   const handleSignUp = async (e) => {
     e.preventDefault();
