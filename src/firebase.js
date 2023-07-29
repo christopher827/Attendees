@@ -9,7 +9,7 @@ apiKey: "AIzaSyDkNsAdr7gMs8LfKAQDgsmBiOTmbFpVjNg",
   storageBucket: "attendies-2efdd.appspot.com",
   messagingSenderId: "443030887286",
   appId: "1:443030887286:web:8da78da8c6c09751927857",
-  measurementId: "G-WECXEHSGFD"
+measurementId: "G-WECXEHSGFD"
 };
 
 const app = initializeApp(firebaseConfig);
