@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { UserAuth } from "../context/AuthContext";
 
 function SignUp() {
-  const [email, setEmail] = useState('');
+const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [matricNumber, setMatricNumber] = useState('');
