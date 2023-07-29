@@ -64,7 +64,7 @@ console.log(e.message);
             </div>
           </div>
           
-          <button className='w-full my-2 p-3 bg-button text-btnText rounded-2xl shadow-xl'  >Sign Up</button>
+          <button className='w-full my-2 p-3 bg-button text-btnText rounded-2xl shadow-xl' >Sign Up</button>
         </form>
 
         <p className='my-4 text-center'>Already have an account ? <Link to="/signin" className='text-accent'>Sign In</Link></p>
