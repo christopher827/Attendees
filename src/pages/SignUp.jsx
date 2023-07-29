@@ -33,7 +33,7 @@ const [error, setError] = useState('');
         <p className='text-center'>Effortlessly track your attendance by logging in as a student. Stay on top of your progress with ease.</p>
 
         {error ? <p className='bg-red-300 p-3 my-2'>({error})</p> : null}
-        <form onSubmit={handleSignUp}>
+      <form onSubmit={handleSignUp}>
           <div className='my-4'>
             <label>Full Name</label>
             <div className='my-2 w-full relative rounded-2xl shadow-xl outline-none'>
