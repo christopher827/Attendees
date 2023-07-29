@@ -60,7 +60,7 @@ console.log(e.message);
             <label>Password</label>
             <div className='my-2 w-full relative rounded-2xl shadow-xl outline-none'>
               <input type='password' onChange={(e) => setPassword(e.target.value)} className='w-full p-2 bg-primary border border-input rounded-2xl outline-none' />
-              <AiFillLock className='absolute right-2 top-3 text-gray-400' />
+              <AiFillLock className='absolute right-2 top-3 text-gray-400'/>
             </div>
           </div>
           
