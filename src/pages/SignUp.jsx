@@ -13,7 +13,7 @@ const navigate = useNavigate();
 const { signUp } = UserAuth();
 
 const handleSignUp = async (e) => {
-    e.preventDefault();
+e.preventDefault();
     setError('');
     try {
       await signUp(email, password);
