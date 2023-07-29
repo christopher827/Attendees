@@ -27,7 +27,7 @@ await signUp(email, password);
   };
 
   return (
-    <div>
+<div>
       <div className='max-w-[400px] mx-auto h-screen px-4 py-20 '>
         <h1 className='font-2xl font-bold text-center'>Sign Up</h1>
         <p className='text-center'>Effortlessly track your attendance by logging in as a student. Stay on top of your progress with ease.</p>
