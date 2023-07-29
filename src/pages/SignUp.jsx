@@ -12,7 +12,7 @@ const [fullName, setFullName] = useState('');
 const navigate = useNavigate();
 const { signUp } = UserAuth();
 
-  const handleSignUp = async (e) => {
+const handleSignUp = async (e) => {
     e.preventDefault();
     setError('');
     try {
