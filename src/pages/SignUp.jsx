@@ -19,7 +19,7 @@ try {
 await signUp(email, password);
 navigate('/account');
 } catch (e) {
-      setError(e.message);
+setError(e.message);
       console.log(e.message);
     }
 
