@@ -8,7 +8,7 @@ apiKey: "AIzaSyDkNsAdr7gMs8LfKAQDgsmBiOTmbFpVjNg",
   projectId: "attendies-2efdd",
   storageBucket: "attendies-2efdd.appspot.com",
   messagingSenderId: "443030887286",
-  appId: "1:443030887286:web:8da78da8c6c09751927857",
+appId: "1:443030887286:web:8da78da8c6c09751927857",
 measurementId: "G-WECXEHSGFD"
 };
 
