@@ -47,6 +47,6 @@ return(
 </AuthContextProvider>
 
 </ThemeProvider>
-  )
+)
 }
 export default App
