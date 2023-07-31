@@ -10,7 +10,7 @@ const [lecturerLongitude, setLecturerLongitude] = useState(null);
 const getLecturerLocation = () => {
 if (navigator.geolocation) {
 navigator.geolocation.getCurrentPosition(
-        (position) => {
+(position) => {
           setLecturerLatitude(position.coords.latitude);
           setLecturerLongitude(position.coords.longitude);
         },
