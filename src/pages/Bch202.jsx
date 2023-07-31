@@ -37,7 +37,7 @@ console.error('Geolocation is not supported by this browser.');
 const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
       const distance = R * c;
       return distance;
-    } else {
+} else {
 return null;
 }
 };
