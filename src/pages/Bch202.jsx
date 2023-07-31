@@ -40,7 +40,7 @@ const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
     } else {
       return null;
     }
-  };
+};
 
 const toRadians = (angle) => {
 return (angle * Math.PI) / 180;
