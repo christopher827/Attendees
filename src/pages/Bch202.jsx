@@ -134,6 +134,6 @@ setLecturerLatitude(position.coords.latitude);
 </div>
 
     </div>
-  );
+);
 }
 export default Bch202;
