@@ -60,7 +60,7 @@ return (angle * Math.PI) / 180;
   };
 
   useEffect(() => {
-    getLecturerLocation();
+getLecturerLocation();
     const unsubscribe = fetchStudents();
 
     return () => {
