@@ -14,7 +14,7 @@ navigator.geolocation.getCurrentPosition(
 setLecturerLatitude(position.coords.latitude);
 setLecturerLongitude(position.coords.longitude);
 },
-        (error) => {
+(error) => {
           console.error('Error getting lecturer location:', error);
         }
       );
