@@ -5,7 +5,7 @@ import { db } from '../firebase';
 function Bch202() {
 const [students, setStudents] = useState([]);
 const [lecturerLatitude, setLecturerLatitude] = useState(null);
-  const [lecturerLongitude, setLecturerLongitude] = useState(null);
+const [lecturerLongitude, setLecturerLongitude] = useState(null);
 
   const getLecturerLocation = () => {
     if (navigator.geolocation) {
