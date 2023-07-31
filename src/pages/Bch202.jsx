@@ -3,47 +3,47 @@ import { collection, query, onSnapshot ,doc,updateDoc} from 'firebase/firestore'
 import { db } from '../firebase';
 
 function Bch202() {
-const [students, setStudents] = useState([]);
-const [lecturerLatitude, setLecturerLatitude] = useState(null);
-const [lecturerLongitude, setLecturerLongitude] = useState(null);
+  const [students, setStudents] = useState([]);
+  const [lecturerLatitude, setLecturerLatitude] = useState(null);
+  const [lecturerLongitude, setLecturerLongitude] = useState(null);
 
-const getLecturerLocation = () => {
-if (navigator.geolocation) {
-navigator.geolocation.getCurrentPosition(
-(position) => {
-setLecturerLatitude(position.coords.latitude);
-setLecturerLongitude(position.coords.longitude);
-},
-(error) => {
-console.error('Error getting lecturer location:', error);
-}
-);
-} else {
-console.error('Geolocation is not supported by this browser.');
-}
-};
+  const getLecturerLocation = () => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          setLecturerLatitude(position.coords.latitude);
+          setLecturerLongitude(position.coords.longitude);
+        },
+        (error) => {
+          console.error('Error getting lecturer location:', error);
+        }
+      );
+    } else {
+      console.error('Geolocation is not supported by this browser.');
+    }
+  };
 
-const calculateDistance = (lat1, lon1, lat2, lon2) => {
-if (lat1 && lon1 && lat2 && lon2) {
-const R = 6371; // Radius of the Earth in kilometers
-const dLat = toRadians(lat2 - lat1);
-const dLon = toRadians(lon2 - lon1);
-const a =
+  const calculateDistance = (lat1, lon1, lat2, lon2) => {
+    if (lat1 && lon1 && lat2 && lon2) {
+      const R = 6371; // Radius of the Earth in kilometers
+      const dLat = toRadians(lat2 - lat1);
+      const dLon = toRadians(lon2 - lon1);
+      const a =
         Math.sin(dLat / 2) * Math.sin(dLat / 2) +
         Math.cos(toRadians(lat1)) *
           Math.cos(toRadians(lat2)) *
           Math.sin(dLon / 2) *
-      Math.sin(dLon / 2);
-const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-      const istance = R * c;
+          Math.sin(dLon / 2);
+      const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+      const distance = R * c;
       return distance;
-} else {
-return null;
-}
-};
+    } else {
+      return null;
+    }
+  };
 
-const toRadians = (angle) => {
-return (angle * Math.PI) / 180;
+  const toRadians = (angle) => {
+    return (angle * Math.PI) / 180;
   };
   
 
@@ -60,7 +60,7 @@ return (angle * Math.PI) / 180;
   };
 
   useEffect(() => {
-getLecturerLocation();
+    getLecturerLocation();
     const unsubscribe = fetchStudents();
 
     return () => {
@@ -133,7 +133,7 @@ getLecturerLocation();
       <button  className='bg-button text-btnText px-5 py-2 ml-2 rounded-2xl shadow-lg hover:shadow-2xl ' onClick={handleDeletion}>Delete Attendance</button>
 </div>
 
-</div>
-);
+    </div>
+  );
 }
 export default Bch202;
