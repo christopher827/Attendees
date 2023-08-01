@@ -11,7 +11,7 @@ const { user, logout } = UserAuth();
 const navigate = useNavigate();
 const [attendanceTaken, setAttendanceTaken] = useState(false);
 
-  useEffect(() => {
+useEffect(() => {
   checkAttendanceStatus();
   }, []);
 
