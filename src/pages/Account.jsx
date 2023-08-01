@@ -28,7 +28,7 @@ const handleAttendance = async () => {
 if (attendanceTaken) {
 alert('Your attendance for today has been marked, till tomorrow');
 return;
-    }
+}
     try {
       const { email } = user;
       const position = await new Promise((resolve, reject) => {
