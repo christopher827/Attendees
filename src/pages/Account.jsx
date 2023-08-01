@@ -49,7 +49,7 @@ longitude,
 
 alert('Your attendance has been taken.');
 setAttendanceTaken(true);
-      } else {
+} else {
         alert('Your attendance for today has already been marked.');
       }
     } catch (e) {
