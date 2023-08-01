@@ -7,7 +7,7 @@ import { collection, addDoc, where, query, getDocs, limit, onSnapshot } from 'fi
 import Qr2 from '../assets/Images/Qr.jpeg';
 
 function Account() {
-  const { user, logout } = UserAuth();
+const { user, logout } = UserAuth();
   const navigate = useNavigate();
   const [attendanceTaken, setAttendanceTaken] = useState(false);
 
