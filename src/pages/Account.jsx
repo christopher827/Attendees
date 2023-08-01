@@ -45,7 +45,7 @@ await addDoc(collection(db, 'students'), {
 email,
 latitude,
 longitude,
-        });
+});
 
         alert('Your attendance has been taken.');
         setAttendanceTaken(true);
