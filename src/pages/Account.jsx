@@ -43,7 +43,7 @@ const querySnapshot = await getDocs(q);
 if (querySnapshot.empty) {
 await addDoc(collection(db, 'students'), {
 email,
-      latitude,
+latitude,
           longitude,
         });
 
