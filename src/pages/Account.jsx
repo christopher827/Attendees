@@ -13,7 +13,7 @@ const [attendanceTaken, setAttendanceTaken] = useState(false);
 
 useEffect(() => {
 checkAttendanceStatus();
-  }, []);
+}, []);
 
   const handleSignOut = async () => {
     try {
