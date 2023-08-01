@@ -17,7 +17,7 @@ checkAttendanceStatus();
 
 const handleSignOut = async () => {
 try {
-      await logout();
+await logout();
       navigate('/');
     } catch (e) {
       console.log(e.message);
