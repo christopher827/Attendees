@@ -44,7 +44,7 @@ if (querySnapshot.empty) {
 await addDoc(collection(db, 'students'), {
 email,
 latitude,
-          longitude,
+longitude,
         });
 
         alert('Your attendance has been taken.');
