@@ -56,7 +56,6 @@ alert('Your attendance for today has already been marked.');
 console.log(e.message);
 }
 };
-
 const checkAttendanceStatus = async () => {
     try {
       const { email } = user;
