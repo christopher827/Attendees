@@ -312,7 +312,7 @@ if (attendanceTaken) {
 
   }
 
-  const handlePth304Attendance = async()=>{
+const handlePth304Attendance = async()=>{
     if (attendanceTaken) {
       alert('Your attendance for today has been marked, till tomorrow');
       return;
