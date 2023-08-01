@@ -43,7 +43,7 @@ const q = query(attendanceRef, where('email', '==', email), limit(1));
 if (querySnapshot.empty) {
 await addDoc(collection(db, 'students'), {
 email,
-          latitude,
+      latitude,
           longitude,
         });
 
