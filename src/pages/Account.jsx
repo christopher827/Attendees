@@ -31,7 +31,7 @@ return;
 }
 try {
 const { email } = user;
-      const position = await new Promise((resolve, reject) => {
+const position = await new Promise((resolve, reject) => {
         navigator.geolocation.getCurrentPosition(resolve, reject);
       });
       const { latitude, longitude } = position.coords;
