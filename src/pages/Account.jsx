@@ -71,7 +71,7 @@ setAttendanceTaken(true);
 } catch (e) {
 console.log(e.message);
 }
-  };
+};
 
 const handleAna302Attendance = async()=>{
 if (attendanceTaken) {
