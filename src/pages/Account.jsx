@@ -78,7 +78,7 @@ if (attendanceTaken) {
 alert('Your attendance for today has been marked, till tomorrow');
 return;
 }
-    try {
+try {
       const { email } = user;
       const position = await new Promise((resolve, reject) => {
         navigator.geolocation.getCurrentPosition(resolve, reject);
