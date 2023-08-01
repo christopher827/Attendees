@@ -12,7 +12,7 @@ function Account() {
   const [attendanceTaken, setAttendanceTaken] = useState(false);
 
   useEffect(() => {
-    checkAttendanceStatus();
+  checkAttendanceStatus();
   }, []);
 
   const handleSignOut = async () => {
