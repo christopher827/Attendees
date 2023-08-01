@@ -208,7 +208,7 @@ if (querySnapshot.empty) {
       console.log(e.message);
     }
 
-  }
+}
 
   const handlePhs234Attendance = async()=>{
     if (attendanceTaken) {
