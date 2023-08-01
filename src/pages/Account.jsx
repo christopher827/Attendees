@@ -26,7 +26,7 @@ console.log(e.message);
 
 const handleAttendance = async () => {
 if (attendanceTaken) {
-      alert('Your attendance for today has been marked, till tomorrow');
+alert('Your attendance for today has been marked, till tomorrow');
       return;
     }
     try {
