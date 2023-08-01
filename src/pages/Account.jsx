@@ -74,7 +74,7 @@ setAttendanceTaken(true);
   };
 
 const handleAna302Attendance = async()=>{
-    if (attendanceTaken) {
+if (attendanceTaken) {
  alert('Your attendance for today has been marked, till tomorrow');
       return;
     }
@@ -119,7 +119,7 @@ if (querySnapshot.empty) {
     });
       const { latitude, longitude } = position.coords;
 
-      const attendanceRef = collection(db, 'ent302');
+    const attendanceRef = collection(db, 'ent302');
       const q = query(attendanceRef, where('email', '==', email), limit(1));
       const querySnapshot = await getDocs(q);
 
