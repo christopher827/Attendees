@@ -91,7 +91,7 @@ const querySnapshot = await getDocs(q);
 
 if (querySnapshot.empty) {
 await addDoc(collection(db, 'ana302'), {
-        email,
+email,
           latitude,
           longitude,
         });
