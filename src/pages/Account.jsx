@@ -108,7 +108,7 @@ if (querySnapshot.empty) {
   }
 
   const handleEnt302Attendance = async()=>{
-    if (attendanceTaken) {
+if (attendanceTaken) {
       alert('Your attendance for today has been marked, till tomorrow');
       return;
     }
