@@ -93,7 +93,7 @@ if (querySnapshot.empty) {
 await addDoc(collection(db, 'ana302'), {
 email,
 latitude,
-          longitude,
+longitude,
         });
 
         alert('Your attendance has been taken.');
