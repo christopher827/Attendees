@@ -57,7 +57,7 @@ console.log(e.message);
 }
 };
 
-  const checkAttendanceStatus = async () => {
+const checkAttendanceStatus = async () => {
     try {
       const { email } = user;
 
