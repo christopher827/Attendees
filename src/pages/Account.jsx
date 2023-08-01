@@ -48,7 +48,7 @@ longitude,
 });
 
 alert('Your attendance has been taken.');
-        setAttendanceTaken(true);
+setAttendanceTaken(true);
       } else {
         alert('Your attendance for today has already been marked.');
       }
