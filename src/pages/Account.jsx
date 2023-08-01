@@ -52,7 +52,7 @@ setAttendanceTaken(true);
 } else {
 alert('Your attendance for today has already been marked.');
 }
-    } catch (e) {
+} catch (e) {
       console.log(e.message);
     }
   };
