@@ -73,7 +73,7 @@ setAttendanceTaken(true);
     }
   };
 
-  const handleAna302Attendance = async()=>{
+const handleAna302Attendance = async()=>{
     if (attendanceTaken) {
       alert('Your attendance for today has been marked, till tomorrow');
       return;
