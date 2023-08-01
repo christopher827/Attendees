@@ -440,6 +440,6 @@ return;
 
       </div>
     );
-  }
+ }
 }
 export default Account;
