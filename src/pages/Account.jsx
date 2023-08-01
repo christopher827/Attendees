@@ -87,7 +87,7 @@ const { latitude, longitude } = position.coords;
 
 const attendanceRef = collection(db, 'ana302');
       const q = query(attendanceRef, where('email', '==', email), limit(1));
-      const querySnapshot = await getDocs(q);
+const querySnapshot = await getDocs(q);
 
 if (querySnapshot.empty) {
     await addDoc(collection(db, 'ana302'), {
