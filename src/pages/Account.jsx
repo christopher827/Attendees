@@ -64,7 +64,7 @@ const attendanceRef = collection(db, 'students');
 const q = query(attendanceRef, where('email', '==', email), limit(1));
 
 onSnapshot(q, (querySnapshot) => {
-        if (!querySnapshot.empty) {
+if (!querySnapshot.empty) {
           setAttendanceTaken(true);
         }
       });
