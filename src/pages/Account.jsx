@@ -66,7 +66,7 @@ const q = query(attendanceRef, where('email', '==', email), limit(1));
 onSnapshot(q, (querySnapshot) => {
 if (!querySnapshot.empty) {
 setAttendanceTaken(true);
-        }
+ }
       });
     } catch (e) {
       console.log(e.message);
