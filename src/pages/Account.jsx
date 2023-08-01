@@ -68,7 +68,7 @@ if (!querySnapshot.empty) {
 setAttendanceTaken(true);
 }
 });
-    } catch (e) {
+} catch (e) {
       console.log(e.message);
     }
   };
