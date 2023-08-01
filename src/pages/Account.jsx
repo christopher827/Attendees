@@ -15,7 +15,7 @@ useEffect(() => {
 checkAttendanceStatus();
 }, []);
 
-  const handleSignOut = async () => {
+const handleSignOut = async () => {
     try {
       await logout();
       navigate('/');
