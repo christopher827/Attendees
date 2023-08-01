@@ -57,7 +57,7 @@ console.log(e.message);
 }
 };
 const checkAttendanceStatus = async () => {
-    try {
+try {
       const { email } = user;
 
       const attendanceRef = collection(db, 'students');
