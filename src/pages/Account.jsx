@@ -91,7 +91,7 @@ const position = await new Promise((resolve, reject) => {
 
 if (querySnapshot.empty) {
     await addDoc(collection(db, 'ana302'), {
-          email,
+        email,
           latitude,
           longitude,
         });
