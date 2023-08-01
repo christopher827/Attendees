@@ -105,7 +105,7 @@ alert('Your attendance for today has already been marked.');
 console.log(e.message);
 }
 
-  }
+}
 
   const handleEnt302Attendance = async()=>{
 if (attendanceTaken) {
