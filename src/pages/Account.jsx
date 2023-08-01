@@ -108,7 +108,7 @@ console.log(e.message);
 
   const handleEnt302Attendance = async()=>{
 if (attendanceTaken) {
-    alert('Your attendance for today has been marked, till tomorrow');
+  alert('Your attendance for today has been marked, till tomorrow');
       return;
     }
     try {
