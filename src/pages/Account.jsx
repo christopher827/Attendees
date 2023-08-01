@@ -67,7 +67,7 @@ onSnapshot(q, (querySnapshot) => {
 if (!querySnapshot.empty) {
 setAttendanceTaken(true);
 }
-      });
+});
     } catch (e) {
       console.log(e.message);
     }
