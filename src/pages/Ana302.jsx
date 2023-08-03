@@ -37,7 +37,7 @@ return distance;
     }
   };
 
-  const toRadians = (angle) => {
+const toRadians = (angle) => {
     return (angle * Math.PI) / 180;
   };
   
