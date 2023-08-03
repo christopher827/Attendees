@@ -23,7 +23,7 @@ console.error('Geolocation is not supported by this browser.');
 }
 };
 
-  const calculateDistance = (lat1, lon1, lat2, lon2) => {
+const calculateDistance = (lat1, lon1, lat2, lon2) => {
     if (lat1 && lon1 && lat2 && lon2) {
       const R = 6371; // Radius of the Earth in kilometers
       const dLat = toRadians(lat2 - lat1);
