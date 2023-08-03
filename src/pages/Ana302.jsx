@@ -50,7 +50,7 @@ id: doc.id,
 ...doc.data(),
 }));
 setStudents(studentData);
-    });
+   });
   };
 
 useEffect(() => {
