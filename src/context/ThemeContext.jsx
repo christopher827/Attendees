@@ -7,7 +7,7 @@ const getInitialTheme=()=>{
 if (typeof window!=='undefined' && window.localStorage) {
 const storedPrefs=window.localStorage.getItem('color-theme')
 if (typeof storedPrefs==='string') {
-    return storedPrefs
+return storedPrefs
 }
 
 /*if there's no color preference stored in the local storage, it then checks whether the user's system preferences 
