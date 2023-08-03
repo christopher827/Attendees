@@ -51,7 +51,7 @@ id: doc.id,
 }));
 setStudents(studentData);
    });
-  };
+};
 
 useEffect(() => {
     getLecturerLocation();
