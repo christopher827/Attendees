@@ -4,7 +4,7 @@ import { db } from '../firebase';
 
 function Ana302() {
 const [students, setStudents] = useState([]);
-  const [lecturerLatitude, setLecturerLatitude] = useState(null);
+const [lecturerLatitude, setLecturerLatitude] = useState(null);
   const [lecturerLongitude, setLecturerLongitude] = useState(null);
 
   const getLecturerLocation = () => {
