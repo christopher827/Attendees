@@ -25,7 +25,7 @@ export const ThemeProvider = ({initialTheme, children}) => {
 const [theme, setTheme] = useState(getInitialTheme)
 
 const rawSetTheme = (theme) => {
-        const root = window.document.documentElement;
+    const root = window.document.documentElement;
         const isDark = theme === 'dark'
 
         root.classList.remove(isDark ? 'light' : 'dark')
