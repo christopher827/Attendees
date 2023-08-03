@@ -44,7 +44,7 @@ return (angle * Math.PI) / 180;
 
 const fetchStudents = () => {
 const studentsRef = collection(db, 'ana302');
-    const q = query(studentsRef);
+const q = query(studentsRef);
     return onSnapshot(q, (snapshot) => {
       const studentData = snapshot.docs.map((doc) => ({
         id: doc.id,
