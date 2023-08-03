@@ -49,7 +49,7 @@ const studentData = snapshot.docs.map((doc) => ({
 id: doc.id,
 ...doc.data(),
   }));
-    setStudents(studentData);
+  setStudents(studentData);
     });
   };
 
