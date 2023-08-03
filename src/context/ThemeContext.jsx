@@ -42,7 +42,7 @@ useEffect(()=> {
 
     return (
 <ThemeContext.Provider value={{theme,setTheme}}>
-    {children}
+{children}
 </ThemeContext.Provider>
     )
 }
