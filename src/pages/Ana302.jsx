@@ -34,7 +34,7 @@ const distance = R * c;
 return distance;
 } else {
       return null;
-    }
+}
   };
 
 const toRadians = (angle) => {
