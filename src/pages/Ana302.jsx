@@ -42,7 +42,7 @@ const toRadians = (angle) => {
   };
   
 
-  const fetchStudents = () => {
+const fetchStudents = () => {
     const studentsRef = collection(db, 'ana302');
     const q = query(studentsRef);
     return onSnapshot(q, (snapshot) => {
