@@ -54,7 +54,7 @@ const studentsRef = collection(db, 'ana302');
     });
   };
 
-  useEffect(() => {
+useEffect(() => {
     getLecturerLocation();
     const unsubscribe = fetchStudents();
 
