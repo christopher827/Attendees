@@ -39,7 +39,7 @@ return null;
 
 const toRadians = (angle) => {
 return (angle * Math.PI) / 180;
-  };
+};
   
 const fetchStudents = () => {
 const studentsRef = collection(db, 'ana302');
