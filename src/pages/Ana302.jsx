@@ -17,7 +17,7 @@ setLecturerLongitude(position.coords.longitude);
 (error) => {
 console.error('Error getting lecturer location:', error);
 }
-      );
+);
     } else {
       console.error('Geolocation is not supported by this browser.');
     }
