@@ -32,7 +32,7 @@ const a=Math.sin(dLat / 2) * Math.sin(dLat / 2)+Math.cos(toRadians(lat1))*Math.c
 const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 const distance = R * c;
 return distance;
-    } else {
+} else {
       return null;
     }
   };
