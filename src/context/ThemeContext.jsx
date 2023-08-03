@@ -38,7 +38,7 @@ rawSetTheme(initialTheme)
 }
 useEffect(()=> {
  rawSetTheme(theme)
-    },[theme])
+},[theme])
 
     return (
 <ThemeContext.Provider value={{theme,setTheme}}>
