@@ -11,6 +11,6 @@ import Qr2 from "../assets/Images/Qr2.jpeg"
   <img src={Qr2} alt="" className="rounded-sm w-6/12 sm:w-4/12 md:w-5/12 lg:w-6/12" />
   </div>
  </div>
-  )
+ )
 }
 export default QRCodes
