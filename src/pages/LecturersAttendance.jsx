@@ -7,7 +7,7 @@ function LecturersAttendance() {
   const [lecturerLatitude, setLecturerLatitude] = useState(null);
   const [lecturerLongitude, setLecturerLongitude] = useState(null);
 
-  const getLecturerLocation = () => {
+const getLecturerLocation = () => {
   if (navigator.geolocation) {
 navigator.geolocation.getCurrentPosition(
         (position) => {
