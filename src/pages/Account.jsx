@@ -310,7 +310,6 @@ const attendanceRef = collection(db, 'ent302');
     }
 
   }
-
 const handlePth304Attendance = async()=>{
     if (attendanceTaken) {
       alert('Your attendance for today has been marked, till tomorrow');
