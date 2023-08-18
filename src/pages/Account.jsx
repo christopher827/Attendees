@@ -119,7 +119,7 @@ alert('Your attendance for today has been marked, till tomorrow');
       const { latitude, longitude } = position.coords;
 
 const attendanceRef = collection(db, 'ent302');
-      const q = query(attendanceRef, where('email', '==', email), limit(1));
+const q = query(attendanceRef, where('email', '==', email), limit(1));
       const querySnapshot = await getDocs(q);
 
       if (querySnapshot.empty) {
