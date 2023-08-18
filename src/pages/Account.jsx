@@ -140,7 +140,7 @@ const q = query(attendanceRef, where('email', '==', email), limit(1));
   }
 
 
-  const handleGst207Attendance = async()=>{
+const handleGst207Attendance = async()=>{
     if (attendanceTaken) {
       alert('Your attendance for today has been marked, till tomorrow');
       return;
