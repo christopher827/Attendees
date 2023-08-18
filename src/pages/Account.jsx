@@ -137,7 +137,7 @@ const q = query(attendanceRef, where('email', '==', email), limit(1));
     } catch (e) {
       console.log(e.message);
     }
-  }
+}
 
 
 const handleGst207Attendance = async()=>{
@@ -156,7 +156,7 @@ try {
       const q = query(attendanceRef, where('email', '==', email), limit(1));
       const querySnapshot = await getDocs(q);
 
-      if (querySnapshot.empty) {
+if (querySnapshot.empty) {
         await addDoc(collection(db, 'Gst207'), {
           email,
           latitude,
