@@ -157,7 +157,7 @@ try {
       const querySnapshot = await getDocs(q);
 
 if (querySnapshot.empty) {
-        await addDoc(collection(db, 'Gst207'), {
+      await addDoc(collection(db, 'Gst207'), {
           email,
           latitude,
           longitude,
