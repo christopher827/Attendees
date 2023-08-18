@@ -137,7 +137,6 @@ const attendanceRef = collection(db, 'ent302');
     } catch (e) {
       console.log(e.message);
     }
-
   }
 
 
