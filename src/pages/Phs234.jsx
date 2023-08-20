@@ -3,7 +3,7 @@ import { collection, query, onSnapshot ,doc,updateDoc} from 'firebase/firestore'
 import { db } from '../firebase';
 
 function Phs234() {
-  const [students, setStudents] = useState([]);
+const [students, setStudents] = useState([]);
   const [lecturerLatitude, setLecturerLatitude] = useState(null);
   const [lecturerLongitude, setLecturerLongitude] = useState(null);
 
