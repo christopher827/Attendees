@@ -11,7 +11,7 @@ const [students, setStudents] = useState([]);
   if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(
   (position) => {
-          setLecturerLatitude(position.coords.latitude);
+        setLecturerLatitude(position.coords.latitude);
           setLecturerLongitude(position.coords.longitude);
         },
         (error) => {
