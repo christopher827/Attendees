@@ -66,8 +66,7 @@ const R = 6371; // Radius of the Earth in kilometers
       unsubscribe();
     };
   }, []);
-
-  function handleDeletion() {
+function handleDeletion() {
     if (window.confirm('Are you sure you want to delete the attendance?')) {
       students.forEach((student) => {
 
