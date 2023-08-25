@@ -8,7 +8,7 @@ function Pol201() {
   const [lecturerLongitude, setLecturerLongitude] = useState(null);
 
   const getLecturerLocation = () => {
-    if (navigator.geolocation) {
+  if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
           setLecturerLatitude(position.coords.latitude);
