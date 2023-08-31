@@ -20,7 +20,7 @@ function Pol201() {
   );
   } else {
       console.error('Geolocation is not supported by this browser.');
-    }
+  }
   };
 
   const calculateDistance = (lat1, lon1, lat2, lon2) => {
