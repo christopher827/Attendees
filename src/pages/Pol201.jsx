@@ -42,7 +42,7 @@ function Pol201() {
   };
 
   const toRadians = (angle) => {
-    return (angle * Math.PI) / 180;
+  return (angle * Math.PI) / 180;
   };
   
 
