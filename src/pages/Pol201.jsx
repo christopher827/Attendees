@@ -45,7 +45,7 @@ function Pol201() {
   
 
   const fetchStudents = () => {
-    const studentsRef = collection(db, 'Pol201');
+  const studentsRef = collection(db, 'Pol201');
     const q = query(studentsRef);
     return onSnapshot(q, (snapshot) => {
       const studentData = snapshot.docs.map((doc) => ({
