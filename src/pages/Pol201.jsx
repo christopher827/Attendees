@@ -18,7 +18,7 @@ function Pol201() {
   console.error('Error getting lecturer location:', error);
   }
   );
-    } else {
+  } else {
       console.error('Geolocation is not supported by this browser.');
     }
   };
