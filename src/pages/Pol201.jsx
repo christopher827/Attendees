@@ -13,7 +13,7 @@ function Pol201() {
   (position) => {
   setLecturerLatitude(position.coords.latitude);
   setLecturerLongitude(position.coords.longitude);
-    },
+  },
         (error) => {
           console.error('Error getting lecturer location:', error);
         }
