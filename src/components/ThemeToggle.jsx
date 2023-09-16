@@ -24,7 +24,7 @@ export default ThemeToggle;
 
 /*import React,{useContext} from 'react'
 import {HiSun,HiMoon} from 'react-icons/hi'
-import { ThemeContext } from '../context/ThemeContext'
+
 
 function ThemeToggle() {
 const {theme,setTheme}=useContext(ThemeContext)
