@@ -27,7 +27,7 @@ import {HiSun,HiMoon} from 'react-icons/hi'
 
 
 function ThemeToggle() {
-const {theme,setTheme}=useContext(ThemeContext)
+
   return (
 <div>
 {theme==='dark' ?(
